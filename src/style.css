@@ -1,0 +1,270 @@
+body{
+  background-image: url("./images/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+/*header styling*/
+header{
+  height: 100vh;
+
+}
+/*navbar styling*/
+nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  margin-top: 5rem;
+  color: white;
+  backdrop-filter: blur(17px);
+  position: relative;
+  z-index: 1;
+}
+nav img.logo{
+  position: absolute;
+  top: 17%;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  padding: 45px 0rem;
+}
+nav ul li {
+  letter-spacing: 2.7px;
+  padding-left: 38px;
+  cursor: pointer;
+  position: relative;
+}
+img.menu,img.close{
+  display: none;
+  
+}
+li.navactive span ,li.navactive:hover span {
+  position: absolute;
+  background: white;
+  width: calc(100% - 38px);
+  height: 2px;
+  top: 249%;
+  left: 38px;
+  opacity: 1;
+}
+nav li:hover span{
+  position: absolute;
+  opacity: .5;
+  background: white;
+  width: calc(100% - 38px);
+  height: 2px;
+  top: 249%;
+  left: 38px;
+}
+
+/*home explre section styling*/
+.explore-parent{
+  margin-top: 261px;
+  color: white;
+}
+
+.explore-parent h5{
+  letter-spacing: 8.75px;
+  font-size: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.explore-parent h5 span{
+  display: inline-block;
+}
+.explore-parent p{
+
+  width: 25em;
+  line-height: 2em;
+}
+.col-lg-6.e-parent{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.explore-button {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 274px;
+  border-radius: 49%;
+  cursor: pointer;
+  position: relative;
+
+}
+.explore-button::before {
+  content: "";
+  background: grey;
+  position: absolute;
+  width: 374px;
+  height: 374px;
+  border-radius: 50%;
+  opacity: .5;
+  z-index: -1;
+ transform: scale(0);
+}
+.explore-button:hover::before{
+  animation: pop .2s linear forwards;
+}
+.explore-button span {
+  background: white;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*destiniton styling*/
+.planets-parent{
+  margin-top: 76px;
+}
+.planets-parent h5{
+  color: white;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  margin-bottom: 94px;
+  text-transform: uppercase;
+}
+.planet-list{
+  margin-top: 90px !important;
+}
+.planet-list ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  margin-left: -4em;
+  justify-content: center;
+}
+
+.planet-list ul li {
+  padding: 1em;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: relative;
+}
+.planet-list ul li.planetactive::before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 100%;
+  left: 25%;
+}
+.planet-list ul li:hover:before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 100%;
+  left: 25%;
+  opacity: .5;
+}
+
+
+.planet-info h1 {
+  color: white;
+  font-size: 45px;
+  line-height: 2em;
+}
+.planet-info p {
+  color: white;
+  line-height: 2em;
+
+}
+.planet-info hr{
+  color: white;
+  margin: 60px 0px 30px 0px;
+
+}
+.moon-moving {
+  background-image: url("../src/images/destination/2k_moon.jpg");
+  width: 357px;
+  height: 357px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: turn 15s linear infinite ;
+  margin: auto;
+}
+.mars-moving{
+  background-image: url("../src/images/destination/2k_mars.jpg");
+  width: 357px;
+  height: 357px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: turn 15s linear infinite ;
+  margin: auto;
+}
+.europa-moving{
+  background-image: url("../src/images/destination/Dh_europa_texture.webp");
+  width: 357px;
+  height: 357px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: turn 15s linear infinite ;
+  margin: auto;
+}
+.titan-moving{
+  background-image: url("../src/images/destination/titan.jpg");
+  width: 357px;
+  height: 357px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: turn 15s linear infinite ;
+  margin: auto;
+}
+.row.data{
+  color: white;
+}
+
+.planet-info span{
+  color: white;
+  opacity: .5;
+  font-size: 2em;
+}
+.spaceHead{
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+}
+.crew-list ul{
+  color: white;
+ 
+}
+.crew-list ul li {
+position: relative;
+display: inline;
+padding: 1em;
+}
+.crew-list ul li span{
+  position:absolute;
+  background-color: white;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  opacity: .5;
+  cursor: pointer;
+  top: 0;
+   left: 0;
+
+}
+
+.row.planet{
+  height: 35em;
+}
+li.crew-active span{
+  opacity: 1 !important;
+}

@@ -1,0 +1,175 @@
+html,body{
+  overflow: hidden;
+}
+/*small tablets*/
+@media (max-width:768px) {
+    nav ul li {
+        letter-spacing: 2.7px;
+        padding-left: 2vw;
+      }
+      li.navactive span, li:hover span {
+        position: absolute;
+        background: white;
+        width: 83%;
+        height: 2px;
+        top: 150%;
+        left: 21%;
+    }
+ 
+}
+
+/*large tablets and small laptops*/
+@media (min-width: 480px) and (max-width: 991px) {
+  .crew-list ul {
+    color: white;
+    margin-top: -38em;
+}
+  .planet-list ul {
+    margin-bottom: 6em;
+}
+  html,body{
+    overflow: scroll;
+  }
+  .explore-parent{
+    margin-top: 106px;
+  }
+    body{
+        background-image: url("./images/home/background-home-tablet.jpg");
+        background-size: 100% 100%;
+
+    }
+    .col-lg-6.e-parent{
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    .explore-parent{
+      text-align: center;
+    }
+    p.aos-init.aos-animate{
+      width: 26em;
+      margin: auto;
+  }
+
+
+}
+/*mobile phones*/
+@media (max-width: 576px) {
+  .crew-list ul {
+    color: white;
+    margin-top: -38em;
+}
+  .imgCrew{
+    width: 95vw;
+  }
+
+  .col-sm-6{
+    display: inline !important;
+    width: 50% !important;
+  }
+  .planet-list ul {
+    margin-bottom: 6em;
+    justify-content: space-around;
+  }
+  .col-sm-6 {
+    display: inline;
+    width: 47%;
+}
+  .planet-list ul li {
+    width: 4em;
+}
+  .explore-button.aos-init.aos-animate{
+    margin-top: 4em;
+  }
+  html,body{
+    overflow: scroll;
+  }
+  p.aos-init.aos-animate{
+    width: 20em;
+    margin: auto;
+}
+  .col-lg-6.e-parent{
+    display: flex;
+    justify-content: center;
+  }
+  .explore-parent{
+    text-align: center;
+  }
+    body{
+    background-image: url("./images/home/background-home-mobile.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+  }
+  
+
+    nav{
+        margin-top: 0px;
+    }
+    nav ul {
+        display: none;
+      }    
+    nav ul.active {
+        display: block;
+        position: absolute;
+        top: 99%;
+        left: 0%;
+        text-align: center;
+        width: 100%;
+        backdrop-filter: blur(17px);
+        overflow: hidden;
+        animation: open .5s ease forwards;
+        background: radial-gradient(black, transparent);
+      
+        
+    }
+    nav ul.active li{
+       
+       padding: 0.5em 0em;
+       
+    }
+    li.navactive span,li:hover span {
+        position: absolute;
+        background: white;
+        width: 18%;
+        height: 2px;
+        top: 100%;
+        left: 41%;
+    }
+
+  .col-lg-6.col-sm-6.list{
+    display: flex;
+    width: 20% !important;
+    align-items: center;
+    font-size: 1rem;
+}
+.col-lg-6.col-sm-4.logo {
+    width: 80%;
+}
+img.menu,img.close{
+    display: block;
+    width: 3em;
+  }
+  img.close{
+    display: none;
+  }
+  .explore-parent{
+    text-align: center;
+    margin-top: 48px;
+    position: relative;
+  }
+  .explore-parent h5{
+    font-size: 16px;
+  }
+
+  .explore-parent h1{
+    font-size: 120px;
+  }
+  .planets-parent h5 {
+    font-size: 18px;
+}
+}
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}

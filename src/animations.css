@@ -1,0 +1,25 @@
+/*open nav bar on smal screen animation*/
+@keyframes open{
+    from{
+        height: 0;
+    }
+    to{
+        height: 15em;
+    }
+}
+@keyframes pop{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes turn{
+    from{
+      background-position: -750px 0px;
+    }
+    to{
+      background-position: 0px 0px;
+    }
+  }
